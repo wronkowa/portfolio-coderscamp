@@ -1,0 +1,32 @@
+.skills
+  display: flex
+  // flex-direction: column
+  flex-wrap: wrap
+  justify-content: space-around
+.skill-box
+  background-color: $orange
+  margin: 20px
+  padding: 20px
+  width: 25%
+  text-align: center
+  position: relative
+.skill-box::after
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: calc(100% - 2px)
+  height: calc(100% - 2px)
+  transform: translate(4px, 4px)
+  // background-color: black
+  border: 2px solid black
+.skill-box__icon
+  font-size: 5rem
+.section-title__center
+  text-align: center
+.skill-box__title
+  font-size: 1.5rem
+  padding: 10px
+.skill-box__description
+  font-size: 1rem
+  font-style: italic

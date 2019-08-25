@@ -17,6 +17,8 @@ section {
 .section-title {
   font-size: 22px;
   padding: 15px 0;
+  width: 100%;
+  text-align: left;
 }
 
 .menu {
@@ -175,5 +177,54 @@ section {
 
 .about-me__description {
   width: 60%;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skill-box {
+  background-color: #ffad33;
+  margin: 20px;
+  padding: 20px;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+
+.skill-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+  border: 2px solid black;
+}
+
+.skill-box__icon {
+  font-size: 5rem;
+}
+
+.section-title__center {
+  text-align: center;
+}
+
+.skill-box__title {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.skill-box__description {
+  font-size: 1rem;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
