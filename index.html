@@ -38,7 +38,7 @@
   <div class="wrapper">
     <section class="cta">
       <p class="cta__text">I am happy to help you with any problem!</p>
-      <button class="btn btn--contact">Contact me!</button>
+      <button class="btn btn--blue">Contact me!</button>
       <button class="btn btn--check">Check my CV</button>
     </section>
     <section class="about-me">
@@ -81,48 +81,60 @@
       </div>
     </section>
     <section class="portfolio">
+      <h3 class="section-title">Portfolio</h3>
       <div class="portfolio-box">
         <h4 class="portfolio-box__title">Projekt 1</h5>
           <p class="portfolio-box__description">Opis opis jakis opis</p>
-          <button class="btn">github</button>
+          <button class="btn btn--blue">github</button>
           <button class="btn">live</button>
       </div>
       <div class="portfolio-box">
         <h4 class="portfolio-box__title">Projekt 2</h5>
           <p class="portfolio-box__description">Opis opis jakis opis</p>
-          <button class="btn">github</button>
+          <button class="btn btn--blue">github</button>
           <button class="btn">live</button>
       </div>
       <div class="portfolio-box">
         <h4 class="portfolio-box__title">Projekt 3</h5>
           <p class="portfolio-box__description">Opis opis jakis opis</p>
-          <button class="btn">github</button>
+          <button class="btn btn--blue">github</button>
           <button class="btn">live</button>
       </div>
       <div class="portfolio-box">
         <h4 class="portfolio-box__title">Projekt 4</h5>
           <p class="portfolio-box__description">Opis opis jakis opis</p>
-          <button class="btn">github</button>
+          <button class="btn btn--blue">github</button>
           <button class="btn">live</button>
       </div>
     </section>
     <section class="contact">
+      <h3 class="section-title">Contact</h3>
       <div class="contact__leftbar">
-        <ion-icon name="send" class="contact__icon-send"></ion-icon>
-        <p class="contact__description">Please describe your question. Send me a message and I will answer you as soon
-          as possible!</p>
+        <p class="contact__description">
+          <ion-icon name="send" class="contact__icon-send"></ion-icon>Please describe your question. Send me a message
+          and I will answer you as soon
+          as possible!
+        </p>
         <div class="contact__social">
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-linkedin"></ion-icon>
-          <ion-icon name="logo-instagram"></ion-icon>
-          <ion-icon name="logo-github"></ion-icon>
+          <a href="https://twitter.com/?lang=pl" target="_blank" class="link social__icon social__icon--tw">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/magdawrona/" target="_blank" class="link social__icon social__icon--ln">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/wronowna" target="_blank" class="link social__icon social__icon--insta">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://github.com/wronkowa" target="_blank" class="link social__icon social__icon--git">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
         </div>
         <div class="contact-data">
           <p class="contact-data__company-name">
-            Magda Logo </br>
-            Poland, Rzeszów
+            Magda Logo
           </p>
           <p class="contact-data__address">
+            Poland, Rzeszów </br>
             ul. Ulicowa 1/1 </br>
             11-111 Miasto
           </p>
@@ -130,15 +142,13 @@
           <p class="contact-data__email">contact@magdalogo.pl</p>
         </div>
       </div>
-      <div class="contact__form">
-        <form action="">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Your email address">
-          <input type="text" placeholder="topic">
-          <textarea cols="50" rows="10" placeholder="Message"></textarea>
-          <button class="btn">Send</button>
-        </form>
-      </div>
+      <form action="" class="contact__form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Your email address">
+        <input type="text" placeholder="topic">
+        <textarea cols="50" rows="10" placeholder="Message"></textarea>
+        <button class="btn">Send</button>
+      </form>
     </section>
   </div>
   <footer class="footer">

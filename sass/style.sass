@@ -8,10 +8,23 @@ html
 section
   margin-bottom: 75px
 .section-title
-  font-size: 22px
+  font-size: 1.8rem
   padding: 15px 0
   width: 100%
   text-align: left
+  position: relative
+.section-title::after
+  content: ''
+  position: absolute
+  bottom: 10%
+  left: 0
+  width: 30%
+  border-bottom: 2px dotted black
+.link
+  color: black
+p
+  padding: 5px 0
+
 @import 'variables'
 @import 'menu'
 @import 'header'
@@ -19,3 +32,6 @@ section
 @import 'wrapper'
 @import 'about-me'
 @import 'skills'
+@import 'portfolio'
+@import 'contact'
+@import 'footer'

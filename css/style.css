@@ -15,10 +15,28 @@ section {
 }
 
 .section-title {
-  font-size: 22px;
+  font-size: 1.8rem;
   padding: 15px 0;
   width: 100%;
   text-align: left;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 30%;
+  border-bottom: 2px dotted black;
+}
+
+.link {
+  color: black;
+}
+
+p {
+  padding: 5px 0;
 }
 
 .menu {
@@ -117,19 +135,47 @@ section {
 
 .btn {
   padding: 10px 20px;
-  border-radius: 15px;
   border: none;
-  -webkit-box-shadow: 1px 1px 2px black;
-          box-shadow: 1px 1px 2px black;
   background: -webkit-gradient(linear, right top, left top, color-stop(14%, #FFC53D), color-stop(68.5%, #FF9A3D));
   background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
   color: black;
   margin: 0 20px;
   cursor: pointer;
   font-size: 1.2rem;
+  position: relative;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  min-width: 100px;
 }
 
-.btn--contact {
+.btn:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  -webkit-transform: translate(-4px, 4px);
+          transform: translate(-4px, 4px);
+  border: 1.4px solid black;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.btn:hover::after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  border: 1.6px solid black;
+}
+
+.btn--blue {
   background-image: -webkit-gradient(linear, left top, right top, from(#3399ff), to(#80bfff));
   background-image: linear-gradient(to right, #3399ff, #80bfff);
 }
@@ -214,10 +260,6 @@ section {
   font-size: 5rem;
 }
 
-.section-title__center {
-  text-align: center;
-}
-
 .skill-box__title {
   font-size: 1.5rem;
   padding: 10px;
@@ -226,5 +268,121 @@ section {
 .skill-box__description {
   font-size: 1rem;
   font-style: italic;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-box {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.portfolio-box__title {
+  font-size: 1.3rem;
+  padding: 5px 0;
+}
+
+.portfolio-box__description {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__leftbar {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.1rem;
+}
+
+.contact__description {
+  color: #ffad33;
+  font-weight: bold;
+}
+
+.contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__icon {
+  font-size: 1.9rem;
+  padding: 0 10px;
+  cursor: pointer;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.social__icon--tw:hover {
+  color: #38A1F3;
+}
+
+.social__icon--ln:hover {
+  color: #0077B5;
+}
+
+.social__icon--insta:hover {
+  color: #ffad33;
+}
+
+.social__icon--git:hover {
+  color: grey;
+}
+
+.contact__form {
+  width: 45%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1.5px solid black;
+  padding: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
